@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>rotate</title>
+   <style>
+        .container {
+            background: yellow;
+            width: 10rem;
+            height: 10rem;
+            padding: 2rem;
+            margin: 1rem;
+            position: relative;
+        }
+
+        .box {
+            background: black;
+            padding: 2rem;
+            position: absolute;
+            left: 35%;
+            top: 33;
+        }
+        /*hover이벤트가 발생하면*/
+        .box:hover {
+            /*객체에 마우스를 갖다대면 20도 오른쪽으로 돌아간다*/
+            transform: rotate(20deg);
+        }
+
+        .box:active {
+            /*클릭하면 왼쪽으로 20도 돌아감*/
+            transform: rotate(-20deg);
+        }
+
+        .three {
+            perspective: 10rem;
+        }
+
+        .three .box:hover{
+            /*x축으로 45도 넘어감*/
+            transform: rotateX(45deg);
+        }
+
+        .three .box:active {
+            /*hover포함 클릭후 y축으로 45도꺾인다*/
+            transform: rotateY(45deg);
+        }
+   </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='box'></div>
+    </div>
+    <div class='container three'>
+        <div class='box'></div>
+    </div>
+</body>
+</html>

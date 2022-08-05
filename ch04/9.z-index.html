@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>z-index</title>
+   <style>
+        div {
+            padding: 3rem;
+            margin: 1rem;
+            position: fixed;
+        }
+
+        .one {
+            background: red;
+            left: 1rem;
+            top: 1rem;
+            /*아래서부터 1번*/
+            z-index: 3;
+        }
+
+        .two {
+            background: green;
+            left: 2rem;
+            top: 2rem;
+            z-index: 1;
+        }
+
+        .three{
+            background: blue;
+            left: 3rem;
+            top: 3rem;
+            z-index: 2;
+        }
+   </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+    <div class='three'></div>
+</body>
+</html>

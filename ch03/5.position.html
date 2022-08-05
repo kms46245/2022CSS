@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>background-position</title>
+   <style>
+        div {
+            background-image: url('../res/leaf.jpg');
+            background-repeat: no-repeat;
+            border: .1rem solid;
+            width: 10rem;
+            height: 10rem;
+            margin: .5rem;
+        }
+
+        #one {
+            /*포지션을 정할수있음*/
+            background-position: right bottom;
+        }
+
+        #two {
+            background-position: center;
+        }
+   </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>right bottom</div>
+    <div id='two'>center</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>transition</title>
+   <style>
+        div {
+            width: 10rem;
+            height: 10rem;
+            background: red;
+            transition-property: background, border-radius;
+            transition-duration: 1s;
+            transition-delay: .5s;
+        }
+
+        div:hover {
+            background: blue;
+            border-radius: 50%;
+        }
+   </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

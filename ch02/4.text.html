@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>text</title>
+   <style>
+        h3 {
+            /*과제 파란색 글자, 밑줄*/
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a {
+            /*링크에 있는 밑줄을 없애기*/
+            text-decoration: none;
+        }
+
+        span {
+            /*글자 중간 밑줄*/
+            text-decoration: line-through;
+        }
+
+        .letter {
+            /*글자사이의 간격 0.2만큼의 공간으로 띄워짐*/
+            letter-spacing: .2rem;
+        }
+
+        .shadow {
+            /*css기본 기준점이다. left로0.3 top에서0.3 3번째rem은 색상의농도*/
+            text-shadow: .3rem .3rem .5rem red;
+        }
+
+        .word {
+            /*단어사이의 간격*/
+            word-spacing: .5rem;
+        }
+   </style>
+</head>
+<body>
+    <h3>몸의 구성</h3>
+    <dt><a href='#'>육체</a></dt>
+    <dd>피와 살이다. 키가 크다. <span>잘생겼다.</span> 등으로 표현한다.</dd>
+    <dt>기체</dt>
+    <dd class='letter'>몸을 움직이는 에너지이다. 기분이 좋다. 활력이 넘친다. 등으로 표현한다.</dd>
+    <dt class='shadow'>정보체</dt>
+    <dd class='letter word'>몸을 채우는 정보이다. 성격이 좋다. 영특하다. 등으로 표현한다.</dd>
+</body>
+</html>

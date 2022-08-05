@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>float</title>
+   <style>
+        div {
+            padding: 1rem;
+            margin: 1rem;
+            border: .1rem solid;
+            /*content box의 width값이 정적으로 바뀜*/
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+        }
+
+        .three {
+            background: yellow;
+            /*float값을 초기화시키겠다*/
+            /*다음줄 첫번째 배치*/
+            clear: left;
+        }
+
+        .four {
+            background-color: green;
+        }
+   </style>
+</head>
+<body>
+    <div class='one'>one</div>
+    <div class='two'>two</div>
+    <div class='three'>three</div>
+    <div class='four'>four</div>
+</body>
+</html>

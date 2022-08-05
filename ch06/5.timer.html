@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>timer</title>
+   <style>
+        #container div {
+            width: 5rem;
+            height: 3rem;
+            padding: .3rem;
+            margin: .3rem 1.7rem;
+            border-radius: .3rem;
+            background: red;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+            transition-duration: 3s;
+        }
+
+        #container:hover div {
+            height: 10rem;
+        }
+
+        .linear {
+            transition: linear;
+        }
+
+        .ease {
+            /*기본값*/
+            transition: ease;
+        }
+
+        .ease-out {
+            transition: ease-out;
+        }
+
+        .ease-in {
+            transition: ease-out;
+        }
+   </style>
+</head>
+<body>
+    <div id='container'>
+        <div class='linear'>linear</div>
+        <div class='ease'>ease</div>
+        <div class='ease-out'>ease-out</div>
+        <div class='ease-in'>ease-in</div>
+    </div>
+</body>
+</html>

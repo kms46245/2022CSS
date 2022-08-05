@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>background-repeat</title>
+   <style>
+        div {
+            width: 9rem;
+            height: 9rem;
+            border: .1rem solid;
+            background-image: url('../res/leaf.jpg');       
+        }
+
+        #one {
+            background-repeat: repeat-x;
+        }
+
+        #two {
+            background-repeat: repeat-y;
+        }
+
+        #three {
+            background-repeat: no-repeat;
+        }
+   </style>
+</head>
+<body>
+    <div id='one'></div>
+    <div id='two'></div>
+    <div id='three'></div>
+</body>
+</html>

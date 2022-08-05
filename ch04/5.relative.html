@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>position: relative</title>
+   <style>
+        div {
+            padding: 5rem;
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+            position: relative;/*상대적*/
+            left: 2rem;
+            /*왼쪽모서리부터(relative-position) 얼마만큼 떨어질거냐*/
+            top: 1rem;
+        }
+   </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+</body>
+</html>

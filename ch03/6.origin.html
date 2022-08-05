@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>background-origin</title>
+   <style>
+        div {
+            background-image: url('../res/leaf.jpg');
+            background-repeat: no-repeat;
+            border: 1rem solid;
+            width: 10rem;
+            height: 10rem;
+            padding: 1rem;
+            margin: .5rem;
+        }
+
+        #one {
+            /*보더박스를 백그라운드로 보겠다*/
+            background-origin: border-box;
+        }
+
+        #two {
+            /*패딩박스를 백그라운드로 보겠다   기본값*/
+            background-origin: padding-box;
+        }
+
+        #three {
+            /*컨텐트박스를 백그라운드로 보겠다*/
+            background-origin: content-box;
+        }
+   </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>border-box</div>
+    <div id='two'>padding-box</div>
+    <div id='three'>content-box</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>box-sizing</title>
+   <style>
+        div {
+            width: 10rem;
+            height: 10rem;
+            padding: 2rem;
+            border: .1rem solid;
+            margin: 1rem;
+        }
+
+        #one {
+            box-sizing: content-box; /*기본값*/
+        }
+
+        #two {
+            /*크기는 보더박스의 크기로 변한다(2rem)*/
+            box-sizing: border-box;
+        }
+   </style>
+</head>
+<body>
+    <div id='one'></div>
+    <div id='two'></div>
+</body>
+</html>         

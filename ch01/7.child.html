@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>child selector</title>
+   <style>
+    /*>를 넣게되면 section바로 밑에 자식에게만 적용됨*/
+    section > ul {
+        border: 0.1rem solid;
+    }
+   </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>예약방법
+                <ul>
+                    <li>전화</li>
+                    <li>인터넷</li>
+                </ul>
+            </li>
+            <li>요금
+                <ul>
+                    <li>성수기: 20만원</li>
+                    <li>비수기: 10만원</li>  
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

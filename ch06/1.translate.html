@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>translate</title>
+   <style>
+        div.container {
+            background: red;
+            width: 3rem;
+            padding: 3rem;
+            margin: 1rem;
+            position: relative;
+        }
+
+        div.box {
+            background: black;
+            padding: 2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        div.box:active {
+                        /*left, top값*/
+        /*검은색 상자를 클릭하면 값많큼 움직였다 돌아옴*/
+            transform: translate(3rem, 1rem);
+        }
+
+        div.three {
+            /*3차원으로 움직이려면 z축을 움직여야함*/
+            perspective: 10rem;
+        }
+
+        /*div.three div:active가 작동한다면*/
+        div.three div:active {
+            /*x,y,z만큼 움직여라*/
+            transform: translate3d(3rem, 1rem, 5rem);
+        }
+   </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='box'></div>
+    </div>
+    <div class='container three'>
+        <div class='box'></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>descending selector</title>
+   <style>
+    /*dexcending selector 자식의 element까지 적용시킴*/
+    /*rem의 단위는 선의 굵기*/
+        section ul {
+            /*0.1은 fixel의 10%의 크기로 쓰겠다*/
+            /*1em은 16픽셀이다*/ /*solid는 실선은 나타냄*/
+            border: 0.1rem solid;
+        }
+   </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>예약방법
+                <ul>
+                    <li>전화</li>
+                    <li>인터넷</li>
+                </ul>
+            </li>
+            <li>요금
+                <ul>
+                    <li>성수기: 20만원</li>
+                    <li>비수기: 10만원</li>  
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>ol</title>
+   <style>
+        .decimal-zero {
+            /*숫자기호*/
+            list-style-type: decimal-leading-zero;
+        }
+
+        .lower-roman {
+            /*로마기호*/
+            list-style-type: lower-roman;
+        }
+
+        .upper-alpha {
+            /*알파벳순*/
+            list-style-type: upper-alpha;
+            /*들여쓰기*/
+            list-style-position: inside;
+        }
+   </style>
+</head>
+<body>
+    <ol>
+        <li>사과</li>
+        <li>딸기</li>
+    </ol>
+    <ol class='decomal-zero'>
+        <li>사과</li>
+        <li>딸기</li>
+    </ol>
+    <ol class='lower-roman'>
+        <li>사과</li>
+        <li>딸기</li>
+    </ol>
+    <!--css없이 작은 로마숫자 번호를 붙여라 -->
+    <ol type='i'>
+        <li>사과</li>
+        <li>딸기</li>
+    </ol>
+    <ol class='upper-alpha'>
+        <li>사과</li>
+        <li>딸기</li>
+    </ol>
+</body>
+</html>

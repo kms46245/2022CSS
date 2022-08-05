@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>attribute</title>
+   <style>
+    /*a[속성] target속성을 갖고있는것만 보드가 작성됨*/
+        a[target] {
+            border: .1rem solid;
+        }
+        
+        a[href='fire.html'] {
+            text-decoration: none;
+        }
+        /*class에 best가 있으면 노랜색을 배경으로 설정하라*/
+        a[class~='best'] {
+            background: yellow;
+        }
+        /*class에 best라는 접두사(-)가 붙어있으면 표를 점선으로*/
+        a[class|='best'] {
+            border: .1rem dotted;
+        }
+        /*best로 시작하면*/
+        a[class^='best'] {
+            background: lightgreen;
+        }
+        /*best로 끝나면*/
+        a[class$='best'] {
+            background: pink;
+        }
+        /*best가 포함되면*/
+        a[class*='best'] {
+            background: lightblue;
+        }
+   </style>
+</head>
+<body>
+    <ul>
+        <li><a href='tree.html' target='blank'>목</a></li>
+        <li><a href='fire.html'>화</a></li>
+        <li><a class='my best choice'>토</a></li>
+        <li><a class='best-choice'>금</a></li>
+        <li><a class='mybest'>수</a></li>
+    </ul>
+</body>
+</html>

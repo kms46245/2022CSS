@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>background-size</title>
+   <style>
+        div {
+            background-image: url('../res/leaf.jpg');
+            border: .1rem solid;
+            width: 10rem;
+            height: 10rem;
+            margin: .5rem;
+            float: left; 
+            background-repeat: no-repeat;
+        }
+
+        #one {
+            background-size: contain;
+        }
+
+        #two {
+            background-size: cover;
+        }
+
+        #three {
+                        /*width, height순*/
+            background-size: 7rem 7rem;
+            background-repeat: no-repeat;
+        }
+
+        #four {
+                    /*contain의 가로 세로 50%*/
+            background-size: 50% 50%;
+        }
+   </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>contain</div>
+    <div id='two'>cover</div>
+    <div id='three'>7rem 7rem</div>
+    <div id='four'>50% 50%</div>
+</body>
+</html>

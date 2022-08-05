@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>border-radius</title>
+   <style>
+        div {
+            border: .1rem solid;
+            width: 10rem;
+            height: 10rem;
+            margin: 1rem;
+            float: left;
+        }
+
+        #one {
+            /*모서리부분에 배치될 반지름 사이즈*/
+            border-radius: 1rem;
+        }
+
+        #two {
+            /*container-box의 height의 값을 반지름으로함*/
+            border-radius: 50%;
+        }
+
+        #three {
+            /*radius를 하고자하는 위치를 지정할수 있음*/
+            border-bottom-right-radius: 2rem;
+        }
+   </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>M</div>
+    <div id='two'>50%</div>
+    <div id='three'>bottom right</div>
+</body>
+</html>
